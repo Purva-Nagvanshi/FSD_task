@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+     .main{
+        height: 400px;
+        width: 700px;
+        background-color: black;
+        display: grid;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns:repeat(4,1fr) ;
+        gap: 5px;
+     }
+     .child{
+        background-color: palevioletred;
+     }
+     .A1{
+        grid-column: 1/3;
+     }
+     .A2{
+        grid-row: 2/12;
+     }
+     .A5{
+        grid-column: 5/2;
+     }
+    </style> 
+</head>    
+<body>
+    <div class="main">
+        <div class="child A1"></div>
+        <div class="child A2"></div>
+        <div class="child A3"></div>
+        <div class="child A4"></div>
+        <div class="child A5"></div>
+        <div class="child A6"></div>
+        <div class="child A7"></div>
+        <div class="child A8"></div>
+        <div class="child A9"></div>
+        <div class="child A10"></div>
+        <div class="child A11"></div>
+        <div class="child A12"></div>
+    </div>
+</body>
+</html>

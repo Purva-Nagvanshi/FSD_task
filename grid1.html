@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .main{
+            height: 550px;
+            width: 500px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);   
+            grid-template-rows: repeat(3,1fr);
+             gap: 5px; 
+             background-color: black; 
+             padding: 5px;
+         }
+         .child{
+             background-color: blue;
+         }
+        
+        .A1{
+            grid-row: 1 / 6;
+         }
+        .A5{
+            grid-column: 5 / 2;
+        } 
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="child A1"></div>
+        <div class="child A2"></div>
+        <div class="child A3"></div>
+        <div class="child A4"></div>
+        <div class="child A5"></div>
+        <div class="child A6"></div>
+        <div class="child A7"></div>
+    </div>
+</body>
+</html>
+
+        

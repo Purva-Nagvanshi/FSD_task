@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .main{
+         width: 500px;
+         height: 500px;
+         background-color: black;
+         gap: 5px;
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         grid-template-rows: 1fr 1fr 1fr;
+         text-align: center;
+         outline: 5px solid black;
+       }
+       .child{
+        background-color: aqua;
+       }
+       .A1{
+        grid-row: 1/span 3;
+       }
+       .A2{
+        grid-column: 2/span 2;
+       }
+       .A3{
+        grid-column: 4/span5;
+       }
+       .A6{
+        grid-row: 2/span 2;
+        grid-column: 4/span4;
+       }
+    </style>
+</head>
+<body>
+    <div class="main">
+     <div class="child A1">1</div>
+     <div class="child A2">2</div>
+     <div class="child A3">3</div>
+     <div class="child A4">4</div>
+     <div class="child A5">5</div>
+     <div class="child A6">6</div>
+     <div class="child A7">7</div>
+     <div class="child A8">8</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+       .main{
+         width: 500px;
+         height: 500px;
+         background-color: black;
+         border: 5px solid black;
+         gap: 2px;
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr ;
+         grid-template-rows: 1fr 1fr 1fr 1fr;
+       }
+       .child{
+        background-color: aqua;
+       }
+       .A1{
+        grid-column: 1/span 4;
+       }
+       .A2{
+        grid-row: 2 / 4;
+       }
+       .A3{
+        grid-column: 2/span4;
+       }
+       .A6{
+        grid-column: 1/span 4;
+       }
+      </style>
+</head>
+<body>
+    <div class="main">
+     <div class="child A1">aaa</div>
+     <div class="child A2">bbbb</div>
+     <div class="child A3">cccc</div>
+     <div class="child A4">ddddd</div>
+     <div class="child A5">eeee</div>
+     <div class="child A6">ffff</div>
+</body>
+</html>
