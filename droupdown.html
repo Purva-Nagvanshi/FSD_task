@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+      *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      .dropdown-counter{
+           width: fit-content;
+           border: 1px solid black;
+           padding: 1rem;
+           margin: 5rem auto;
+           position: relative;
+      }
+      .dropdown-counter:hover>.target{
+            display: block;
+      }
+      .target{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        text-align: center;
+        padding: 2rem;
+        background-color: palevioletred;
+        color: white;
+      }
+   </style>
+</head>
+<body>
+    <div class="dropdown-counter">
+        <button class="trigger">hover to show dropdown</button>
+        <div class="target">this is some dropdown content</div>
+    </div>
+</body>
+</html>
