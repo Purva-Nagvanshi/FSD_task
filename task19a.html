@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/bootstrap.css">
+    <script src="bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .container-fluid{background-color: rgb(144, 158, 228);}
+    </style>
+</head>
+<body>
+<h1>Dropdown</h1>
+<!-- dropdown button -->
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown button
+        </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">option1</a></li>
+              <li><a class="dropdown-item" href="#">option2</a></li>
+              <li><a class="dropdown-item" href="#">option3</a></li>
+            </ul>
+    </div><hr><hr>
+<!-- navbar dropdown button -->
+<div class="container-fluid">
+         <div class="container">
+             <nav class="navbar navbar-expand-lg ">
+                  <h1 class="navbar-brand">LOGO </h1>
+                  <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-item">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="menu-item">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" href="">HOME</a></li>
+                        <li><a class="nav-link active" href="">PROJECTS</a></li>
+                        <li><a class="nav-link active" href="">CONTACT</a></li>
+                        <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  DROPDOWN BUTTON
+                                </a>
+                                <ul class="dropdown-menu">
+                                     <li><a class="dropdown-item" href="#">OPTION1</a></li>
+                                     <li><a class="dropdown-item" href="#">OPTION2</a></li>
+                                     <li><a class="dropdown-item" href="#">OPTION3</a></li>
+                                </ul>
+                    </ul>
+                  </div>
+             </nav>
+         </div>
+     </div>
+</body>
+</html>
