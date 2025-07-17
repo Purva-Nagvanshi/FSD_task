@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="./bootstrap-5.3.7-dist/css/bootstrap.css">
+   <script src="./bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+   <style>
+      .container{
+        width: 600px;
+      }
+      .accordion-button{
+        background-color: rgb(152, 137, 233);
+         /* background-color: var(--bs-accordion-active-bg); */
+      }
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="accordion" id="accor">
+              <div class="accordion-item" data-bs-parent="#accor">
+                    <div class="accordion-header">
+                          <button class="accordion-button collapsed " data-bs-target="#target" data-bs-toggle="collapse">Nagpur famous for?</button>
+                    </div>
+                    <div class="accordion-collapse collapse " data-bs-parent="#accor" id="target">
+                          <div class="accordion-body">
+                              <h3>Nagpur</h3>
+                              <p>In essence, nsgpur offers a blend of natural beauty,historical significance, cultural richness, and serves as an important economic and political center.</p>
+                          </div>
+                    </div>
+              </div>
+        <div class="accordion-item" data-bs-parent="#accor1">
+                    <div class="accordion-header">
+                          <button class="accordion-button collapsed" data-bs-target="#target1" data-bs-toggle="collapse">Time to visit nagpur?</button>
+                    </div>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accor1" id="target1">
+                          <div class="accordion-body">
+                              <h3>Nagpur</h3>
+                              <p>The best time to vist nagpur is generally during the winter months, form october to march.</p>
+                          </div>
+                    </div>
+              </div>
+        <div class="accordion-item" data-bs-parent="#accor2">
+                    <div class="accordion-header">
+                          <button class="accordion-button collapsed" data-bs-target="#target2" data-bs-toggle="collapse">Festival in nagpur?</button>
+                    </div>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accor2" id="target2">
+                          <div class="accordion-body">
+                              <h3>Nagpur</h3>
+                              <p>Nagpur celebrats a variety of festival with great enthusiasm, refecting its rich cultural heritage.</p>
+                          </div>
+                    </div>
+              </div>
+          </div>
+    </div>
+</body>
+</html>
