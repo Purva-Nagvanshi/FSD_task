@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./bootstrap-5.3.7-dist/css/bootstrap.css">
+    <script src="./bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+       .container-fluid{background-color: rgb(238, 177, 128);}
+    </style>
+</head>
+<body>
+     <div class="container-fluid">
+         <div class="container">
+             <nav class="navbar navbar-expand-lg">
+                  <h1 class="navbar-brand" style="margin-left: 400px;">SCHOOL</h1>
+             </nav>
+         </div>
+     </div>
+     <div class="container">
+           <button class="d-lg-none position-absolute bg-secondary" style="top:8px;" data-bs-target="#off-menu" data-bs-toggle="offcanvas"> menu</button>
+          <div class="offcanvas offcanvas-lg-show offcanvas-start show" id="off-menu">
+               <div class="offcanvas-header  bg-dark text-light" data-bs-backdrop="static">
+                  <span>Menu</span>
+                  <button class="btn btn-close btn-warning text-danger opacity-50" data-bs-dismiss="offcanvas"  data-bs-backdrop="static"></button>
+               </div>
+               <div class="offcanvas-body bg-warning">
+                    <ul class="list-unstyled">
+                        <li><h5>For Student</h5>
+                            <ul class="list-unstyled">
+                                <li>courses/program</li>
+                                <li>addmision</li>
+                                <li>student resourses</li>
+                                <li>student portal/login</li>
+                                <li>financial aid/scholarship</li>
+                                <li>event calender</li>
+                            </ul>
+                        </li>
+                         <li><h5>For Faculty & staaf</h5>
+                            <ul class="list-unstyled">
+                                <li>Faculty portal/login</li>
+                                <li>research</li>
+                                <li>department</li>
+                                <li>job apportunities</li>
+                            </ul>
+                        </li>
+                    </ul> 
+               </div>
+          </div>
+     </div>
+</body>
+</html>
