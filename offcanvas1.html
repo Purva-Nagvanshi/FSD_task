@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/bootstrap.css">
+    <script src="bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .container-fluid {
+            background-color: rgb(130, 238, 164);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg ">
+                <h1 class="navbar-brand">LOGO </h1>
+                <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#menu-item">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" id="menu-item">
+                    <div class="offcanvas-header">
+                        <span>Menu</span>
+                        <button class="btn btn-close btn-warning text-danger opacity-50" data-bs-dismiss="offcanvas"
+                            data-bs-backdrop="static"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li><a class="nav-link active" href="">HOME</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    SERVICE
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">OPTION1</a></li>
+                                    <li><a class="dropdown-item" href="#">OPTION2</a></li>
+                                    <li><a class="dropdown-item" href="#">OPTION3</a></li>
+                                </ul>
+                            <li><a class="nav-link active" href="">PROJECTS</a></li>
+                            <li><a class="nav-link active" href="">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>
