@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./bootstrap-5.3.7-dist/css/bootstrap.css">
+    <script src="./bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <h1>carousel-indicator</h1>
+    <div class="container border border-dark p-5 bg-success">
+        <div id="carouselindicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="./media/bckend.png" class="d-block w-150">
+                </div>
+                <div class="carousel-item">
+                    <img src="./media/dsa.png" class="d-block w-150">
+                </div>
+                <div class="carousel-item active">
+                    <img src="./media/fsd.jpg" class="d-block w-150">
+                </div>
+                <div class="carousel-item">
+                    <img src="./media/interview.png" class="d-block w-150">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselindicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselindicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark"></span>
+            </button>
+        </div>
+    </div>
+
+    <h1>carousel-fade</h1>
+    <div class="container border border-dark p-5 bg-warning">
+        <div id="carouselfade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="./media/bckend.png" class="d-block w-150">
+                </div>
+                <div class="carousel-item">
+                    <img src="./media/dsa.png" class="d-block w-150">
+                </div>
+                <div class="carousel-item active">
+                    <img src="./media/fsd.jpg" class="d-block w-150">
+                </div>
+                <div class="carousel-item">
+                    <img src="./media/interview.png" class="d-block w-150">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselfade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselfade" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark"></span>
+            </button>
+        </div>
+    </div>
+
+    <h1>carousel-caption</h1>
+    <div class="container border border-dark p-5 bg-dark">
+        <div id="carouselcaption" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="./media/bckend.png" class="d-block w-150">
+                    <div class="carousel-caption ">
+                        <h5>BACKEND</h5>
+                        <p>Backend languages are the programming languages that websites scenes.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./media/dsa.png" class="d-block w-150">
+                    <div class="carousel-caption">
+                        <h5>DSA</h5>
+                        <p>Data Structures and Algorithms.</p>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="./media/fsd.jpg" class="d-block w-150">
+                    <div class="carousel-caption">
+                        <h5>FSD</h5>
+                        <p>A full-stack web developer is a person who can develop both client and server software.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./media/interview.png" class="d-block w-150">
+                    <div class="carousel-caption">
+                        <h5>INTERVIEW</h5>
+                        <p>Prepare to answer questions about your ambitions for the future.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselcaption" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselcaption" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark"></span>
+            </button>
+        </div>
+    </div>
+
+    <h1>carousel-autoplaying</h1>
+    <div class="container border border-dark p-5 bg-primary">
+        <div id="carouselautoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./media/bckend.png" class="d-block w-150">
+                </div>
+                <div class="carousel-item">
+                    <img src="./media/dsa.png" class="d-block w-150">
+                </div>
+                <div class="carousel-item">
+                    <img src="./media/fsd.jpg" class="d-block w-150">
+                </div>
+                <div class="carousel-item">
+                    <img src="./media/interview.png" class="d-block w-150">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselautoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselautoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark"></span>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
