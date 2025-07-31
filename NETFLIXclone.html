@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="./bootstrap-5.3.7-dist/css/bootstrap.css">
+    <script src="./bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #main {
+            height: 100vh;
+            background-image: url('./media/netflix_collage.png');
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            z-index: 1;
+        }
+
+        #main::before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.801);
+            z-index: -1;
+        }
+        #lang-select{
+            border-radius: 5px;
+            height: 39px;
+            width: 110px;
+            background-color: rgba(0, 0, 0, 0.801);
+            color: white;
+        }
+        #val{
+            font-size: 4rem;
+            font-weight: 700;
+        }
+        input{
+            background-color: rgba(0, 0, 0, 0.801);
+            border: white;
+            height: 55px;
+            width: 350px;
+            outline: 2px white solid;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid" id="main">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg sticky-top p-4">
+                <div class="navbar-brand">
+                    <img src="./media/netflix-logo-png-2562.png" alt="" style="height: 50px;">
+                </div>
+                <ul class="navbar-nav d-flex ms-auto gap-2">
+                  <li class="nav-item">
+                     <div class="bg-dark text-white border-0" style="outline: none;">
+                        <select name="language" id="lang-select">
+                              <option value="en">English</option>
+                              <option value="hi">hindi</option>
+                        </select>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                     <button class="sign btn btn-danger rounded-1" style=" background-color: rgb(229, 9 ,20);">Sign in</button>
+                  </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container-fluid mt-5"> 
+            <div class="container  text-white text-center p-5"  style="width: 1200px; height: 500px;">
+                <div class="a1" id="val">
+                    Unlimited movies,tv
+                </div>
+                <div class="a1" id="val">
+                   shows and more 
+                </div>
+                <span style="font-size: 2rem;">
+                   Start at 149 cancel at any time
+                <span><br>
+                 <span style="font-size: 1.5rem;">
+                   Ready to watch? Enter your email to create or restart your membership. 
+                 </span>
+                 <div class="cont d-flex justify-content-center align-item-center gap-2">
+                    <div class="b1">
+                        <input type="Email" placeholder="Email address">
+                    </div>
+                    <div>
+                       <button class="b1 text-light" style="width: 220px; height: 55px; border: black; border-radius: 5px; background-color: rgb(229, 9 ,20);">Get Started</button>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
