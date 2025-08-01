@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <link rel="stylesheet" href="./bootstrap-5.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.7-dist/css/bootstrap.css">
     <script src="./bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
     <style>
-        body{
+        body {
             margin: 0;
             padding: 0;
         }
+
         #main {
             height: 100vh;
             background-image: url('./media/netflix_collage.png');
@@ -31,24 +32,51 @@
             background-color: rgba(0, 0, 0, 0.801);
             z-index: -1;
         }
-        #lang-select{
+
+        #lang-select {
             border-radius: 5px;
             height: 39px;
             width: 110px;
             background-color: rgba(0, 0, 0, 0.801);
             color: white;
         }
-        #val{
-            font-size: 4rem;
+
+        #val {
+            font-size: 3rem;
             font-weight: 700;
         }
-        input{
+
+        input {
             background-color: rgba(0, 0, 0, 0.801);
-            border: white;
+            border: none;
             height: 55px;
-            width: 350px;
+            max-width: 350px;
             outline: 2px white solid;
             color: white;
+            padding: 10px;
+        }
+
+        .email-section {
+            flex-direction: column;
+        }
+
+        @media screen and (max-width :576px) {
+            #val {
+                font-size: 1.5rem;
+            }
+            .small-button{
+                height: 50px;
+                width: 160px;
+                position: relative;
+                left: 25%;
+            }
+            .email-section{
+                margin-left: 1.5rem;
+            }
+            input{
+                height: 45px;
+                border: 1px solid rgb(99, 98, 98);
+            }
         }
     </style>
 </head>
@@ -56,50 +84,48 @@
 <body>
     <div class="container-fluid" id="main">
         <div class="container">
-            <nav class="navbar navbar-expand-lg sticky-top p-4">
-                <div class="navbar-brand">
+            <nav class="navbar navbar-expand-lg p-4">
+                <a class="navbar-brand" herf="#">
                     <img src="./media/netflix-logo-png-2562.png" alt="" style="height: 50px;">
-                </div>
-                <ul class="navbar-nav d-flex ms-auto gap-2">
-                  <li class="nav-item">
-                     <div class="bg-dark text-white border-0" style="outline: none;">
+                </a>
+                <ul class="navbar-nav ms-auto d-flex align-item-center gap-2 flex-row">
+                    <li class="nav-item">
                         <select name="language" id="lang-select">
-                              <option value="en">English</option>
-                              <option value="hi">hindi</option>
+                            <option value="en">English</option>
+                            <option value="hi">hindi</option>
                         </select>
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                     <button class="sign btn btn-danger rounded-1" style=" background-color: rgb(229, 9 ,20);">Sign in</button>
-                  </li>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-danger rounded-1" style=" background-color: rgb(229, 9 ,20);">Sign
+                            in</button>
+                    </li>
                 </ul>
             </nav>
         </div>
-        <div class="container-fluid mt-5"> 
-            <div class="container  text-white text-center p-5"  style="width: 1200px; height: 500px;">
-                <div class="a1" id="val">
-                    Unlimited movies,tv
-                </div>
-                <div class="a1" id="val">
-                   shows and more 
-                </div>
-                <span style="font-size: 2rem;">
-                   Start at 149 cancel at any time
-                <span><br>
-                 <span style="font-size: 1.5rem;">
-                   Ready to watch? Enter your email to create or restart your membership. 
-                 </span>
-                 <div class="cont d-flex justify-content-center align-item-center gap-2">
-                    <div class="b1">
-                        <input type="Email" placeholder="Email address">
+        <div class="container text-white text-center mt-5 p-4">
+
+            <div id="val">
+                Unlimited movies,tv
+            </div>
+            <div id="val">
+                shows and more
+            </div>
+            <div class="my-3" style="font-size: 1.5rem;">
+                Start at ₹149. cancel at anytime.
+                <div>
+                    <div class="mb-3" style="font-size: 1.25rem;">
+                        Ready to watch? Enter your email to create or restart your membership.
                     </div>
-                    <div>
-                       <button class="b1 text-light" style="width: 220px; height: 55px; border: black; border-radius: 5px; background-color: rgb(229, 9 ,20);">Get Started</button>
+                    <div class="d-flex flex-column flex-sm-row email-section justify-content-center align-item-center gap-2 flex-wrap mt-3">
+                        <input type="email" placeholder="Email address">
+                        <button class="btn text-light rounded p-2 small-button"
+                            style=" background-color: rgb(229, 9, 20);">Get
+                            Started
+                        </button>
                     </div>
-                 </div>
+                </div>
             </div>
         </div>
-    </div>
 </body>
 
 </html>
