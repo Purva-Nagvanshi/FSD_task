@@ -1,0 +1,14 @@
+                                           javascriptdatatype:
+//javascript has two types of datatypes.
+//1. primitive data types
+
+
+//a.string - text values
+//b.number - integers and decimals
+//c.boolean - logical
+//d.null - no value
+//e.symbol - unique identifer
+//f.undefined - 
+
+//2. non-primitives types
+//
