@@ -1,54 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #form1{
-            background-color: rgb(13, 207, 142);
-            width: 200px;
-            padding: 15px;
-            border-radius: 5px;
-            height: 200px;
-
-        }
-    </style>
-</head>
-<body>
-    <form id="form1">
-      <div><label for="name">Enter name</label>
-         <input type="text" id="name" name="name" placeholder="enter your name" required>
-      </div>
-      <div><label for="email">Enter email</label>
-         <input type="text" id="email" name="email" placeholder="enter your email" required>
-      </div>
-      <div><label for="name">Enter address</label>
-         <input type="text" id="address" name="address" placeholder="enter your address" required>
-      </div>
-      <button type="submit">submit</button>
-    </form>
-    <table id="table" border="2" style="background-color: rgb(185, 226, 51); width: 100%; display: none;">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Address</th>
-            </tr>
-        </thead>
-       <tbody>
-
-       </tbody>
-    </table>
-</body>
-<script src="./script.js"></script>
-</html>
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tic Tac Toe</title>
@@ -94,7 +46,6 @@
     }
 
     .winner {
-      /* background-color: #3b55ff; */
       background-color: rgb(106, 174, 106);
     }
 
@@ -112,13 +63,25 @@
     button:hover {
       background-color: #0d0431;
     }
+
+    .active {
+      font-weight: bold;
+      color: #fff;
+      background-color: #4caf50;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
   </style>
 </head>
 <body>
   <h1>Tic Tac Toe</h1>
 
   <div id="info">
-    <div>Turn: <span id="turn">X</span></div>
+    <div>
+      Turn: 
+      <span id="playerX" class="active">X</span> | 
+      <span id="playerO">O</span>
+    </div>
     <div>Score - X: <span id="scoreX">0</span> | O: <span id="scoreO">0</span></div>
     <button id="resetBtn">Reset Round</button>
   </div>
@@ -134,14 +97,9 @@
     <div class="cell"></div>
     <div class="cell"></div>
   </div>
+  <script src="script.js"></script>
+
 </body>
-<script src="script.js"></script>
 </html>
 
-
-
-
-
-
-
- -->
+    
