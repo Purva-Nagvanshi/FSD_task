@@ -11,3 +11,5 @@ dotenv.config({ path: "./config.env" })
         console.log("unable to connect  the database : ", err)
     }
   }
+
+  connection()

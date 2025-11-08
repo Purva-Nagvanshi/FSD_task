@@ -17,12 +17,8 @@ let userSchema = mongoose.Schema({
         type: String,
         require: true,
     },
-    city: {
-        type: String,
-        require: true,
-    },
     email: {
-        type: String,
+        type: Object,
         require: true,
         default: emailObject,
     },
@@ -33,11 +29,11 @@ let userSchema = mongoose.Schema({
     },
     password: {
         type: String,
-        require: true,
+        require: true
     },
     timeStamp: {
-        type: Date,
-    },
+        type: Date
+    }
 })
 userSchema.pre("save", async function () {
     this.password = await bcrypt.hash(this.password, 12)

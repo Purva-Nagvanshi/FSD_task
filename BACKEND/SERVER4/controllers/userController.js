@@ -1,4 +1,19 @@
-import { userModel} from "../models/userSchema.js"
+import {userModel} from "../models/userSchema.js"
+import { redisClient } from "../utils/redisConfig.js";
+import nodemailer from "nodemailer"
+
+const transporter = nodemailer.createTransport({
+   host: "smtp.gmail.com",
+   port: 465,
+   secure: true,      
+   auth: {
+      user: process.env.USER_EMAIL,
+      pass: process.env.USER_PASSWORD,
+   },
+});
+
+
+
  let postHandleUserRegister = async (req, res) => {
     try{
         let { name, email, phone, address, password } = req.body
@@ -33,7 +48,3 @@ import { userModel} from "../models/userSchema.js"
 
 
 
-
- // export const postHandleUserRegister = (req, res) => {
-//   res.send("server is running!");
-// };
